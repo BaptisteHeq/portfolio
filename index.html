@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Baptiste Hennequin</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function(e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth"
+          });
+        });
+      });
+    });
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold">Baptiste Hennequin</h1>
+      <nav class="space-x-4">
+        <a href="#about" class="hover:text-blue-600">À propos</a>
+        <a href="#projects" class="hover:text-blue-600">Projets</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="about" class="py-16 px-4 text-center bg-white">
+    <h2 class="text-3xl font-semibold mb-4">À propos</h2>
+    <p class="max-w-2xl mx-auto text-lg">
+      Je m'appelle Baptiste Hennequin et je suis actuellement en 2ᵉ année de BUT informatique à l'IUT Nancy Charlemagne.
+      Je suis orienté vers le développement logiciel et passionné par les projets concrets en équipe.
+    </p>
+  </section>
+
+  <section id="projects" class="py-16 px-4 bg-gray-100">
+    <h2 class="text-3xl font-semibold text-center mb-12">Mes Projets</h2>
+    <div class="max-w-5xl mx-auto space-y-12">
+
+      <!-- SAE 3.01 -->
+      <div class="bg-white rounded-lg shadow p-6">
+        <h3 class="text-2xl font-semibold mb-2">Application Java - Visualisation UML</h3>
+        <p class="mb-4">
+          Projet réalisé en groupe de 4 : développement d'une application permettant de visualiser des classes Java sous forme de diagrammes, similaire à PlantUML.
+          Organisation des tâches via Trello, analyse du besoin et réalisation complète.
+        </p>
+        <a class="text-blue-600 underline" href="https://github.com/BaptisteHeq/SAE-3.01-Groupe-4" target="_blank">Voir le code sur GitHub</a>
+      </div>
+
+      <!-- SAE Web Sécurisé -->
+      <div class="bg-white rounded-lg shadow p-6">
+        <h3 class="text-2xl font-semibold mb-2">Application Web Sécurisée - PHP & BDD</h3>
+        <p class="mb-4">
+          Développement d'un site web en PHP connecté à une base de données (modèle 3NF) pour gérer des listes de concerts et festivals.
+          Projet réalisé en groupe de 4.
+        </p>
+        <a class="text-blue-600 underline" href="https://github.com/BaptisteHeq/festivalNRV" target="_blank">Voir le code sur GitHub</a>
+      </div>
+
+      <!-- SAE Réseau -->
+      <div class="bg-white rounded-lg shadow p-6">
+        <h3 class="text-2xl font-semibold mb-2">Mini Shell Linux & Serveur de package Debian</h3>
+        <p class="mb-4">
+          En binôme, nous avons conçu un shell personnalisé (mbash) avec historique, complétion et exécution de commandes, puis empaqueté en .deb avec serveur Debian local.
+        </p>
+        <a class="text-blue-600 underline" href="/mnt/data/b632c0fb-c3d1-48fd-bcf1-6d92a033966c.pdf" target="_blank">Voir le rapport PDF</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-16 px-4 text-center bg-white">
+    <h2 class="text-3xl font-semibold mb-4">Contact</h2>
+    <p class="text-lg">Vous pouvez me contacter à l’adresse suivante :<br><a href="mailto:baptiste.hennequin270@gmail.com" class="text-blue-600">baptiste.hennequin270@gmail.com</a></p>
+  </section>
+
+  <footer class="bg-gray-200 text-center py-6 mt-10 text-sm">
+    &copy; 2025 Baptiste Hennequin. Tous droits réservés.
+  </footer>
+</body>
+</html>
